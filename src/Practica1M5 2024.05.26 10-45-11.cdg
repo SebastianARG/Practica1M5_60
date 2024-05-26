@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Practica1M5">
+  <ClassDiagramComponents>
+    <Class name="Autor" package="clases" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="nacionalidad" type="String" visibility="private"/>
+        <Field name="fechaNacimiento" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="nacionalidad"/>
+          <Argument type="Date" name="fechaNacimiento"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getNacionalidad" returnType="String" visibility="public"/>
+        <Method name="setNacionalidad" returnType="void" visibility="public">
+          <Argument type="String" name="nacionalidad"/>
+        </Method>
+        <Method name="getFechaNacimiento" returnType="Date" visibility="public"/>
+        <Method name="setFechaNacimiento" returnType="void" visibility="public">
+          <Argument type="Date" name="fechaNacimiento"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="obj"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Catalogo" package="clases" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="ejemplares" type="List&lt;Ejemplar&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="List&lt;Ejemplar&gt;" name="ejemplares"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getEjemplares" returnType="List&lt;Ejemplar&gt;" visibility="public"/>
+        <Method name="setEjemplares" returnType="void" visibility="public">
+          <Argument type="List&lt;Ejemplar&gt;" name="ejemplares"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ejemplar" package="clases" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="codigoEjemplar" type="String" visibility="private"/>
+        <Field name="estado" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="codigoEjemplar"/>
+          <Argument type="String" name="estado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCodigoEjemplar" returnType="String" visibility="public"/>
+        <Method name="setCodigoEjemplar" returnType="void" visibility="public">
+          <Argument type="String" name="codigoEjemplar"/>
+        </Method>
+        <Method name="getEstado" returnType="String" visibility="public"/>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="String" name="estado"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="obj"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Libro" package="clases" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="titulo" type="String" visibility="private"/>
+        <Field name="ISBN" type="String" visibility="private"/>
+        <Field name="editorial" type="String" visibility="private"/>
+        <Field name="anioPublicacion" type="int" visibility="private"/>
+        <Field name="sutores" type="List&lt;Autor&gt;" visibility="private"/>
+        <Field name="ejemplares" type="List&lt;Ejemplar&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="titulo"/>
+          <Argument type="String" name="ISBN"/>
+          <Argument type="String" name="editorial"/>
+          <Argument type="int" name="anioPublicacion"/>
+          <Argument type="List&lt;Autor&gt;" name="sutores"/>
+          <Argument type="List&lt;Ejemplar&gt;" name="ejemplares"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTitulo" returnType="String" visibility="public"/>
+        <Method name="setTitulo" returnType="void" visibility="public">
+          <Argument type="String" name="titulo"/>
+        </Method>
+        <Method name="getISBN" returnType="String" visibility="public"/>
+        <Method name="setISBN" returnType="void" visibility="public">
+          <Argument type="String" name="ISBN"/>
+        </Method>
+        <Method name="getEditorial" returnType="String" visibility="public"/>
+        <Method name="setEditorial" returnType="void" visibility="public">
+          <Argument type="String" name="editorial"/>
+        </Method>
+        <Method name="getAnioPublicacion" returnType="int" visibility="public"/>
+        <Method name="setAnioPublicacion" returnType="void" visibility="public">
+          <Argument type="int" name="anioPublicacion"/>
+        </Method>
+        <Method name="getSutores" returnType="List&lt;Autor&gt;" visibility="public"/>
+        <Method name="setSutores" returnType="void" visibility="public">
+          <Argument type="List&lt;Autor&gt;" name="sutores"/>
+        </Method>
+        <Method name="getEjemplares" returnType="List&lt;Ejemplar&gt;" visibility="public"/>
+        <Method name="setEjemplares" returnType="void" visibility="public">
+          <Argument type="List&lt;Ejemplar&gt;" name="ejemplares"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="obj"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Prestamo" package="clases" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="fechaPrestamo" type="Date" visibility="private"/>
+        <Field name="fechaDevolucion" type="Date" visibility="private"/>
+        <Field name="socio" type="Socio" visibility="private"/>
+        <Field name="ejemplar" type="Ejemplar" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Date" name="fechaPrestamo"/>
+          <Argument type="Date" name="fechaDevolucion"/>
+          <Argument type="Socio" name="socio"/>
+          <Argument type="Ejemplar" name="ejemplar"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getFechaPrestamo" returnType="Date" visibility="public"/>
+        <Method name="setFechaPrestamo" returnType="void" visibility="public">
+          <Argument type="Date" name="fechaPrestamo"/>
+        </Method>
+        <Method name="getFechaDevolucion" returnType="Date" visibility="public"/>
+        <Method name="setFechaDevolucion" returnType="void" visibility="public">
+          <Argument type="Date" name="fechaDevolucion"/>
+        </Method>
+        <Method name="getSocio" returnType="Socio" visibility="public"/>
+        <Method name="setSocio" returnType="void" visibility="public">
+          <Argument type="Socio" name="socio"/>
+        </Method>
+        <Method name="getEjemplar" returnType="Ejemplar" visibility="public"/>
+        <Method name="setEjemplar" returnType="void" visibility="public">
+          <Argument type="Ejemplar" name="ejemplar"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Socio" package="clases" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="dni" type="String" visibility="private"/>
+        <Field name="telefono" type="String" visibility="private"/>
+        <Field name="correoElectronico" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="dni"/>
+          <Argument type="String" name="telefono"/>
+          <Argument type="String" name="correoElectronico"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getDni" returnType="String" visibility="public"/>
+        <Method name="setDni" returnType="void" visibility="public">
+          <Argument type="String" name="dni"/>
+        </Method>
+        <Method name="getTelefono" returnType="String" visibility="public"/>
+        <Method name="setTelefono" returnType="void" visibility="public">
+          <Argument type="String" name="telefono"/>
+        </Method>
+        <Method name="getCorreoElectronico" returnType="String" visibility="public"/>
+        <Method name="setCorreoElectronico" returnType="void" visibility="public">
+          <Argument type="String" name="correoElectronico"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="obj"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Practica1M5" package="practica1m5" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="ejemplares" source="clases.Libro" target="clases.Ejemplar" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Ejemplar&gt;"/>
+    <UseRelation source="clases.Prestamo" target="clases.Ejemplar" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="clases.Libro" target="clases.Ejemplar" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ejemplares" source="clases.Catalogo" target="clases.Ejemplar" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Ejemplar&gt;"/>
+    <UseRelation source="clases.Catalogo" target="clases.Ejemplar" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="clases.Prestamo" target="clases.Socio" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="socio" source="clases.Prestamo" target="clases.Socio" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ejemplar" source="clases.Prestamo" target="clases.Ejemplar" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="sutores" source="clases.Libro" target="clases.Autor" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Autor&gt;"/>
+    <UseRelation source="clases.Libro" target="clases.Autor" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
